@@ -2,12 +2,12 @@
 
 #navbar {
     width: auto;
-    background-color: slategray;
+    background-color: #2C2C54;
 }
 
 #tagline {
     font-family: 'Rowdies', cursive;
-    width: 75%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     color: goldenrod;
@@ -15,7 +15,7 @@
 
 #quote {
     font-family: 'Caveat', cursive;
-    width: 60%;
+    width: 80%;
     text-align: center;
     margin: auto;
     color: white; 
@@ -23,17 +23,34 @@
 }
 
 .icons-area {
-    width: 75%;
+    padding-top: 5px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 
-.btn {
-    width: 15%;
-    height : 60px;
-    margin: 0 auto;
-    display: inline-block;
+.icons-area > h2 {
+    font-family: 'Rowdies', cursive;
     font-size: 200%;
+    color: #2C2C54;
+    padding-top: 0;
+}
+
+.btn {
+    height : 150px;
+    width: 150px;
+    margin: 0 30px;
+    font-size: 400%;
+    background-color: white;
+    color: #2C2C54;
+    border-width: 4px;
+    border-radius: 50%;
+    border-color: #2C2C54;
+    transition: transform .3s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
 }
 
 footer {
@@ -41,5 +58,5 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: slategray;
+    background-color: #2C2C54;
 }
