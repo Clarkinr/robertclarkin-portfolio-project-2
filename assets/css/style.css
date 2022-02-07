@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rowdies:wght@700&display=swap');
+
+#navbar {
+    width: auto;
+    background-color: slategray;
+}
+
+#tagline {
+    font-family: 'Rowdies', cursive;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: goldenrod;
+}
+
+#quote {
+    font-family: 'Caveat', cursive;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: white; 
+    font-size: 180%;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: slategray;
+}
