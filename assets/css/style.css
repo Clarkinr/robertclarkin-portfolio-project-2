@@ -53,10 +53,52 @@
     transform: scale(1.2);
 }
 
+.game-area {
+    width: 90%;
+    font-size: 300%;
+    margin: auto;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.game-area span {
+    padding: 0 10px;
+    font-family: 'Rowdies', cursive;
+    color: #2C2C54;
+}
+
+#versus {
+    margin: 0 auto;
+    text-align: center;
+    color: goldenrod;
+}
+
+.score-area {
+    margin: 1px auto;
+    width: 70%;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.score {
+    display: inline-block;
+    padding: 25px;
+    font-family: 'Rowdies', cursive;
+}
+
 footer {
     height: 50px;
     width: 100%;
     position: absolute;
     bottom: 0;
     background-color: #2C2C54;
+}
+
+#wins {
+    color: green;
+}
+
+#losses {
+    color: red;
+
 }
