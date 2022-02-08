@@ -12,13 +12,14 @@
 </head>
 <body>
     <header>
+        <!-- header area-->
         <div id="titlebar">
             <h1 id="tagline">ROCK, PAPER, SCISSORS, LIZARD, SPOCK</h1>
             <h2 id="quote">"Captain, you almost make me believe in luck." - Spock.</h2>
             <script src="assets/js/script.js"></script>
         </div>
     </header>
-
+    <!-- div containing the buttons which the player can use to select choice-->
     <div class="icons-area">
         <h2>Choose Wisely</h2>
         <button data-type="rock" class="btn btn--rock" aria-label="Button to choose rock">
@@ -38,15 +39,17 @@
         </button>
         
     </div>
+    <!-- Shows the icon chosen by the user and the computer-->
     <div class="game-area">
         <span id="user-select">USER</span>
         <span id="versus">VS</span>
         <span id="comp-select">CPU</span>
     </div>
+    <!-- Area which shows the rule applied when comparing user and computer choices-->
     <div class="declare-area">
         <span id="winner"></span>
     </div>
-
+    <!-- Area where user and computer tallies score is shown-->
     <div class="score-area">
         <p class="score">User wins <span id="wins">0</span></p>
         <p class="score">Computer wins <span id="losses">0</span></p>

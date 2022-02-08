@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rowdies:wght@700&display=swap');
 
-
+/* Style for title bar at the top of the page*/
 #titlebar {
     width: auto;
     background-color: #2C2C54;
 }
-
+/* Changes fonts and styles for the tag line in the title bar*/
 #tagline {
     font-family: 'Rowdies', cursive;
     width: 90%;
@@ -13,7 +13,7 @@
     margin: 0 auto;
     color: goldenrod;
 }
-
+/* Style for Quote from spock underneath tagline*/
 #quote {
     font-family: 'Caveat', cursive;
     width: 80%;
@@ -22,21 +22,21 @@
     color: white; 
     font-size: 180%;
 }
-
+/* Styles div which contains buttons*/
 .icons-area {
     padding-top: 5px;
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
-
+/* Styles text above buttons*/
 .icons-area > h2 {
     font-family: 'Rowdies', cursive;
     font-size: 200%;
     color: #2C2C54;
     padding-top: 0;
 }
-
+/*Button styling*/
 .btn {
     height : 150px;
     width: 150px;
@@ -49,11 +49,11 @@
     border-color: #2C2C54;
     transition: transform .3s;
 }
-
+/* increases size of button when hovering*/
 .btn:hover {
     transform: scale(1.2);
 }
-
+/* gives shape to the area where user choices are displayed*/
 .game-area {
     width: 90%;
     font-size: 300%;
@@ -61,19 +61,19 @@
     padding: 50px 0px;
     text-align: center;
 }
-
+/* Styling for user choices display*/
 .game-area span {
     padding: 0 10px;
     font-family: 'Rowdies', cursive;
     color: #2C2C54;
 }
-
+/* styling for versus between user and computer choices display*/
 #versus {
     margin: 0 auto;
     text-align: center;
     color: goldenrod;
 }
-
+/*styles the div where the rule applied for each user v computer option is shown*/
 .declare-area {
     margin: 0 auto;
     width: 90%;
@@ -82,6 +82,12 @@
     text-align: center;
 }
 
+/* changes color for text in declare area*/
+#winner {
+    color: goldenrod;
+}
+
+/* styles div where score tallies are shown*/
 .score-area {
     margin: 1px auto;
     width: 70%;
@@ -89,21 +95,18 @@
     text-align: center;
 }
 
-#winner {
-    color: goldenrod;
-}
-
+/* styles text in score area*/
 .score {
     display: inline-block;
     padding: 25px;
     font-family: 'Rowdies', cursive;
     color: #2C2C54;
 }
-
+/* changes user winner tally colour to green*/
 #wins {
     color: green;
 }
-
+/* changes computer winner tally colour to red*/
 #losses {
     color: red;
 
