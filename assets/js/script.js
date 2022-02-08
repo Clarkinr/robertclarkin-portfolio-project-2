@@ -89,7 +89,7 @@ function runGame() {
         document.getElementById("winner").innerHTML = 'Spock vaporizes Rock';
     } else if (userScore === "rock" && compScore === "scissors") {
         userWinner();
-        document.getElementById("winner").innerHTML = 'As it always has Rock crushes scissors';
+        document.getElementById("winner").innerHTML = 'As it always has Rock crushes Scissors';
     } else if (compScore === "scissors" && userScore === "paper") {
         computerWinner();
         document.getElementById("winner").innerHTML = 'Scissors cuts Paper';
@@ -119,7 +119,7 @@ function runGame() {
         document.getElementById("winner").innerHTML = 'Spock vaporizes Rock';
     } else if (compScore === "rock" && userScore === "scissors") {
         computerWinner();
-        document.getElementById("winner").innerHTML = 'As it always has Rock crushes scissors';
+        document.getElementById("winner").innerHTML = 'As it always has Rock crushes Scissors';
     } else {
         document.getElementById("winner").innerHTML = 'The game is a draw';
     }
