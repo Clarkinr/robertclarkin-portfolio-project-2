@@ -55,62 +55,86 @@ document.addEventListener("DOMContentLoaded", function() {
         compScore  = "spock";
     } 
 }
-
+/**
+ * Compares variable userScore and compScore to determine winner 
+ * and calls the userWinner or compWinner functions.
+ */
 function runGame() {
     if (userScore === "scissors" && compScore === "paper") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Scissors cuts Paper';
     } else if (userScore === "paper" && compScore === "rock") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Paper covers Rock';
     } else if (userScore === "rock" && compScore === "lizard") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Rock crushes Lizard';
     } else if (userScore === "lizard" && compScore === "spock") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Lizard poisons Spock';
     } else if (userScore === "spock" && compScore === "scissors") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Spock smashes Scissors';
     } else if (userScore === "scissors" && compScore === "lizard") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Scissors decapitates Lizard';
     } else if (userScore === "lizard" && compScore === "paper") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Lizard eats Paper';
     } else if (userScore === "paper" && compScore === "spock") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Paper disproves Spock';
     } else if (userScore === "spock" && compScore === "rock") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'Spock vaporizes Rock';
     } else if (userScore === "rock" && compScore === "scissors") {
+        userWinner();
         document.getElementById("winner").innerHTML = 'As it always has Rock crushes scissors';
     } else if (compScore === "scissors" && userScore === "paper") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Scissors cuts Paper';
     } else if (compScore === "paper" && userScore === "rock") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Paper covers Rock';
     } else if (compScore === "rock" && userScore === "lizard") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Rock crushes Lizard';
     } else if (compScore === "lizard" && userScore === "spock") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Lizard poisons Spock';
     } else if (compScore === "spock" && userScore === "scissors") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Spock smashes Scissors';
     } else if (compScore === "scissors" && userScore === "lizard") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Scissors decapitates Lizard';
     } else if (compScore === "lizard" && userScore === "paper") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Lizard eats Paper';
     } else if (compScore === "paper" && userScore === "spock") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Paper disproves Spock';
     } else if (compScore === "spock" && userScore === "rock") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'Spock vaporizes Rock';
     } else if (compScore === "rock" && userScore === "scissors") {
+        computerWinner();
         document.getElementById("winner").innerHTML = 'As it always has Rock crushes scissors';
     } else {
         document.getElementById("winner").innerHTML = 'The game is a draw';
     }
 }
-
-
-function checkWinner() {
-
-}
-
+/**
+ * Increases the span with id Wins by 1 if user wins the game
+ */
 function userWinner() {
-
+    let userWins = parseInt(document.getElementById("wins").innerText);
+    document.getElementById("wins").innerText = ++userWins;
 }
-
+/**
+ * Increases the span with id losses by 1 if computer wins the game
+ */
 function computerWinner() {
-
+    let userLoss = parseInt(document.getElementById("losses").innerText);
+    document.getElementById("losses").innerText = ++userLoss;
 }
