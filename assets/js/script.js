@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
             } 
             generateComputerAnswer();
             runGame();
-        })
+        });
     } 
-})
+});
 
 /**
  * Generates a random choice for the computer and
