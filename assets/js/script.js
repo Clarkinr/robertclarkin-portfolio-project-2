@@ -1,4 +1,4 @@
-let userScore;
+
 let compScore;
 /**
  * Add event listeners to buttons which will change the inner html of span id user-select
