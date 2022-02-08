@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
  * Generates a random choice for the computer and
  * enters the random choice into the span id comp-select 
+ * idea adapted from (http://www.onlywebpro.com/2016/09/26/learn-object-oriented-javascript-via-game-development/)
  */
  function generateComputerAnswer() {
     this.computerChoice = Math.random();
@@ -58,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
  * Compares variable userScore and compScore to determine winner 
  * and calls the userWinner or compWinner functions.
+ * rules were taken from (Rules for the game were taken from https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/)
  */
 function runGame() {
     if (userScore === "scissors" && compScore === "paper") {
@@ -126,6 +128,7 @@ function runGame() {
 }
 /**
  * Increases the span with id Wins by 1 if user wins the game
+ * (adapted from CodeInstitute Love Math Project)
  */
 function userWinner() {
     let userWins = parseInt(document.getElementById("wins").innerText);
@@ -133,6 +136,7 @@ function userWinner() {
 }
 /**
  * Increases the span with id losses by 1 if computer wins the game
+ * (adapted from CodeInstitute Love Math Project)
  */
 function computerWinner() {
     let userLoss = parseInt(document.getElementById("losses").innerText);

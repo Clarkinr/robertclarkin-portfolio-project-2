@@ -95,18 +95,18 @@
     text-align: center;
 }
 
-/* styles text in score area*/
+/* styles text in score area (adapted from CodeInstitute Love Math Project)*/
 .score {
     display: inline-block;
     padding: 25px;
     font-family: 'Rowdies', cursive;
     color: #2C2C54;
 }
-/* changes user winner tally colour to green*/
+/* changes user winner tally colour to green (adapted from CodeInstitute Love Math Project)*/
 #wins {
     color: green;
 }
-/* changes computer winner tally colour to red*/
+/* changes computer winner tally colour to red (adapted from CodeInstitute Love Math Project)*/
 #losses {
     color: red;
 
