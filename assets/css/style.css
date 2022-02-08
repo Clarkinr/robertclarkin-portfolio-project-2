@@ -39,7 +39,7 @@
 .btn {
     height : 150px;
     width: 150px;
-    margin: 0 30px;
+    margin: 0 15px;
     font-size: 400%;
     background-color: white;
     color: #2C2C54;
@@ -57,7 +57,7 @@
     width: 90%;
     font-size: 300%;
     margin: auto;
-    padding: 50px 50px;
+    padding: 50px 0px;
     text-align: center;
 }
 
@@ -73,6 +73,14 @@
     color: goldenrod;
 }
 
+.declare-area {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.6rem;
+    font-family: 'Rowdies', cursive;
+    text-align: center;
+}
+
 .score-area {
     margin: 1px auto;
     width: 70%;
@@ -80,18 +88,15 @@
     text-align: center;
 }
 
+#winner {
+    color: #2C2C54;
+}
+
 .score {
     display: inline-block;
     padding: 25px;
     font-family: 'Rowdies', cursive;
-}
-
-footer {
-    height: 50px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #2C2C54;
+    color: #2C2C54;
 }
 
 #wins {
@@ -101,4 +106,10 @@ footer {
 #losses {
     color: red;
 
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #2C2C54;
 }
