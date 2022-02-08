@@ -57,10 +57,48 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 function runGame() {
-    if (userScore === compScore) {
-        console.log("Game is a draw");
+    if (userScore === "scissors" && compScore === "paper") {
+        document.getElementById("winner").innerHTML = 'Scissors cuts Paper';
+    } else if (userScore === "paper" && compScore === "rock") {
+        document.getElementById("winner").innerHTML = 'Paper covers Rock';
+    } else if (userScore === "rock" && compScore === "lizard") {
+        document.getElementById("winner").innerHTML = 'Rock crushes Lizard';
+    } else if (userScore === "lizard" && compScore === "spock") {
+        document.getElementById("winner").innerHTML = 'Lizard poisons Spock';
+    } else if (userScore === "spock" && compScore === "scissors") {
+        document.getElementById("winner").innerHTML = 'Spock smashes Scissors';
+    } else if (userScore === "scissors" && compScore === "lizard") {
+        document.getElementById("winner").innerHTML = 'Scissors decapitates Lizard';
+    } else if (userScore === "lizard" && compScore === "paper") {
+        document.getElementById("winner").innerHTML = 'Lizard eats Paper';
+    } else if (userScore === "paper" && compScore === "spock") {
+        document.getElementById("winner").innerHTML = 'Paper disproves Spock';
+    } else if (userScore === "spock" && compScore === "rock") {
+        document.getElementById("winner").innerHTML = 'Spock vaporizes Rock';
+    } else if (userScore === "rock" && compScore === "scissors") {
+        document.getElementById("winner").innerHTML = 'As it always has Rock crushes scissors';
+    } else if (compScore === "scissors" && userScore === "paper") {
+        document.getElementById("winner").innerHTML = 'Scissors cuts Paper';
+    } else if (compScore === "paper" && userScore === "rock") {
+        document.getElementById("winner").innerHTML = 'Paper covers Rock';
+    } else if (compScore === "rock" && userScore === "lizard") {
+        document.getElementById("winner").innerHTML = 'Rock crushes Lizard';
+    } else if (compScore === "lizard" && userScore === "spock") {
+        document.getElementById("winner").innerHTML = 'Lizard poisons Spock';
+    } else if (compScore === "spock" && userScore === "scissors") {
+        document.getElementById("winner").innerHTML = 'Spock smashes Scissors';
+    } else if (compScore === "scissors" && userScore === "lizard") {
+        document.getElementById("winner").innerHTML = 'Scissors decapitates Lizard';
+    } else if (compScore === "lizard" && userScore === "paper") {
+        document.getElementById("winner").innerHTML = 'Lizard eats Paper';
+    } else if (compScore === "paper" && userScore === "spock") {
+        document.getElementById("winner").innerHTML = 'Paper disproves Spock';
+    } else if (compScore === "spock" && userScore === "rock") {
+        document.getElementById("winner").innerHTML = 'Spock vaporizes Rock';
+    } else if (compScore === "rock" && userScore === "scissors") {
+        document.getElementById("winner").innerHTML = 'As it always has Rock crushes scissors';
     } else {
-        console.log("Game is not a Draw");
+        document.getElementById("winner").innerHTML = 'The game is a draw';
     }
 }
 
